@@ -101,7 +101,6 @@ class Writer implements Runnable
     		  System.out.print("write\n");
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     	  
@@ -130,7 +129,6 @@ class Reader implements Runnable
 			RW_lock.readLock();
 			System.out.print("read started\n");
 		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
     	  
@@ -138,7 +136,6 @@ class Reader implements Runnable
     	  try {
   			Thread.sleep(1000);
   		} catch (InterruptedException e) {
-  			// TODO Auto-generated catch block
   			e.printStackTrace();
   		}
     	  
@@ -147,7 +144,6 @@ class Reader implements Runnable
     		  System.out.println("reader finished");
 			RW_lock.readUnLock();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} //release lock
     	  
